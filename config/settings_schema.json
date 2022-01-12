@@ -1,0 +1,32 @@
+[
+  {
+    "name": "theme_info",
+    "theme_name": "Forest Shopify - Headless Theme",
+    "theme_version": "1.0.0",
+    "theme_author": "Labud",
+    "theme_documentation_url": "https:\/\/www.labud.nyc\/",
+    "theme_support_url": "https:\/\/www.labud.nyc\/"
+  },
+  {
+    "name": "Cart",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "cart_notes_enable",
+        "label": "Enable cart notes",
+        "default": true
+      }
+    ]
+  },
+  {
+    "name": "Favicon",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "favicon",
+        "label": "Favicon image",
+        "info": "Will be scaled down to 32 x 32px"
+      }
+    ]
+  }
+]

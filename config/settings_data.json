@@ -1,0 +1,24 @@
+{
+  "current": {
+    "checkout_accent_color": "#000000",
+    "checkout_button_color": "#000000",
+    "sections": {
+      "header": {
+        "type": "header",
+        "settings": {
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "settings": {
+        }
+      }
+    },
+    "content_for_index": []
+  },
+  "presets": {
+    "Default": {
+      "content_for_index": []
+    }
+  }
+}

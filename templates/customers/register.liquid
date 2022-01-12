@@ -1,0 +1,45 @@
+<div class="site-container default-form">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6 offset-md-3 d-flex flex-column">
+        <h2 class="mb-3">{{ 'customer.register.title' | t }}</h2>
+
+        {% form 'create_customer' %}
+          {{ form.errors | default_errors }}
+          <input type="text"
+            name="customer[first_name]"
+            id="FirstName"
+            placeholder="{{ 'customer.register.first_name' | t }}"
+            autofocus
+            {% if form.first_name %}value="{{ form.first_name }}"{% endif %}>
+          <input type="text"
+            name="customer[last_name]"
+            id="LastName"
+            class="mt-3"
+            placeholder="{{ 'customer.register.last_name' | t }}"
+            {% if form.last_name %}value="{{ form.last_name }}"{% endif %}>
+          <input type="email"
+            name="customer[email]"
+            id="Email"
+            class="mt-3 {% if form.errors contains 'email' %}input-error{% endif %}"
+            placeholder="{{ 'customer.register.email' | t }}"
+            value="{% if form.email %}{{ form.email }}{% endif %}"
+            spellcheck="false"
+            autocomplete="off"
+            autocapitalize="off">
+          <input type="password"
+            name="customer[password]"
+            id="CreatePassword"
+            class="mt-3 {% if form.errors contains 'password' %}input-error{% endif %}"
+            placeholder="{{ 'customer.register.password' | t }}">
+
+          <input type="submit" value="{{ 'customer.register.submit' | t }}" class="button mt-3">
+
+          <div class="mt-5">
+            <a class="mr-3" href="/account/login">Login to existing account</a>
+          </div>
+        {% endform %}
+      </div>
+    </div>
+  </div>
+</div>

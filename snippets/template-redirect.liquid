@@ -1,0 +1,9 @@
+{% unless template contains 'customers' or template == nil %}
+  <!-- Redirect all Shopify templates, except for the customers template, to the account. TODO: Update your domain -->
+  <meta http-equiv="refresh" content="0;url=https://store.example-herokuapp.com/account">
+  <script>
+    (function() {
+      window.location = 'https://store.example-herokuapp.com/account';
+    })();
+  </script>
+{% endunless %}
